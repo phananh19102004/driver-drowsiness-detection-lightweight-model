@@ -47,3 +47,5 @@ Total images inferences : 6651 .
 This device has very limited hardware resources (CPU only).
 Total images inferences : 6651 
 - Resnet-18 : 1.14 FPS
+# Quantization & Pruning
+Apply this technique only to resnet-50 
