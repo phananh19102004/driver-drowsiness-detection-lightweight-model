@@ -42,6 +42,7 @@ Normalize(mean=[0.485, 0.456, 0.406],
 - LR Factor :	0.1
 - LR Patience :	3
 - Early Stopping : 5 epochs
+- Training epochs: 25
 # Benchmark
 # PC : GPU Nivida RTX3050 VRAM 6GB
 ![compare metrics](https://drive.google.com/uc?id=1Pp-cANCdO-ErajQ19Bx1jD6YxXwEkBrO)
