@@ -26,6 +26,22 @@ The preprocessing pipeline first applies background blurring on the original ima
   />
 </p>
 
+# Training Setup
+- Image size: 224 × 224
+- Task: Binary classification (Drowsy vs Non-drowsy)
+```bash
+RandomResizedCrop(224)
+RandomHorizontalFlip()
+Normalize(mean=[0.485, 0.456, 0.406],
+          std=[0.229, 0.224, 0.225])
+```
+- Loss : CrossEntropyLoss
+- Optimizer :	Adam
+- Learning Rate :	0.001
+- Weight Decay :	1e-5
+- LR Factor :	0.1
+- LR Patience :	3
+- Early Stopping : 5 epochs
 # Benchmark
 # PC : GPU Nivida RTX3050 VRAM 6GB
 ![compare metrics](https://drive.google.com/uc?id=1Pp-cANCdO-ErajQ19Bx1jD6YxXwEkBrO)
